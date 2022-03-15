@@ -4,6 +4,7 @@
   --color-very-light-green: #f4fcd9;
   --color-light-green: #c5d8a4;
   --color-green: #52734d;
+  --color-dark-green: #31492e;
   --color-brown: #bb9981;
   --color-dark-brown: #534340;
   --color-white: #ffffff;
@@ -49,6 +50,12 @@ ul {
   padding-left: 0;
 }
 
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -112,4 +119,33 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-light-green);
+}
+
+/* Home */
+#home {
+  background: url("imgs/home-background4.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid var(--color-dark-green);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-dark-green);
+}
+
+.home__contact {
+  color: var(--color-dark-green);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-dark-green);
+  border-radius: var(--size-border-radius);
 }
