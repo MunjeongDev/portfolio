@@ -28,6 +28,8 @@
   /* Size */
   --size-border-radius: 4px;
 }
+background: url("https://api.iconify.design/simple-icons/typescript.svg?color=%232f73bf")
+  no-repeat center center / contain;
 
 /* Universal tags */
 * {
@@ -148,4 +150,10 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-dark-green);
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
 }
