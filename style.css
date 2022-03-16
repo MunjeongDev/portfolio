@@ -131,6 +131,18 @@ p {
   background-color: var(--color-light-green);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  font-size: 24px;
+  display: none;
+  outline: 0;
+  background-color: transparent;
+  outline: 0;
+  color: var(--color-white);
+}
+
 /* Home */
 #home {
   background: url("imgs/home-background4.png") center/cover no-repeat;
@@ -190,8 +202,6 @@ p {
 .major__icon {
   margin: auto;
   padding: 30px;
-  border: 1px solid var(--color-light-brown);
-  border-radius: 50%;
 }
 
 .job {
@@ -315,7 +325,7 @@ p {
   width: 200px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-light-white);
+  background-color: var(--color-white);
 }
 
 .project__img {
@@ -385,4 +395,38 @@ p {
 .contact__links i:hover {
   transform: scale(1.2);
   color: var(--color-yellow);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+}
+
+.about__majors {
+  flex-direction: column;
+}
+
+.major {
+  margin-bottom: 38px;
+}
+
+.skillset {
+  flex-direction: column;
+}
+
+.project {
+  flex-grow: 1;
 }
