@@ -15,10 +15,10 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-gray: #b4b2b2;
-  --color-orange: #f8a426;
+  --color-orange: #f7b148;
   --color-yellow: #fde10a;
   --color-black: #000000;
-  --color-blue: #2f73bf;
+  --color-blue: #377cca;
 
   /* Font size */
   --font-large: 48px;
@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
@@ -156,7 +156,7 @@ p {
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-dark-green);
+  border: 2px solid var(--color-orange);
   border-radius: var(--size-border-radius);
 }
 
@@ -359,4 +359,30 @@ p {
   margin-left: -12px;
   margin-top: 8px;
   background-color: var(--color-dark-white);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-orange);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.2);
+  color: var(--color-dark-green);
 }
